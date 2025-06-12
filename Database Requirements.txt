@@ -1,0 +1,68 @@
+User
++-------------+------------------+-------------------+
+| Primary Key | Field            | Data Type         |
++-------------+------------------+-------------------+
+| id          | user_name        | String            |
+|             | password         | String            |
+|             | email            | String            |
+|             | active           | Boolean           |
+|             | mybooks (FK)     | Relationship      |
+|             | roles (FK)       | Relationship      |
++-------------+------------------+-------------------+
+
+Sections
++-------------+------------------+-------------------+
+| Primary Key | Field            | Data Type         |
++-------------+------------------+-------------------+
+| section_id  | section_name     | String(100)       |
+|             | s_section_name   | String(100)       |
+|             | pub_date         | String            |
+|             | description      | String            |
+|             | books (FK)       | Relationship      |
++-------------+------------------+-------------------+
+
+All_books
++-------------+------------------+-------------------+
+| Primary Key | Field            | Data Type         |
++-------------+------------------+-------------------+
+| id          | book_name        | String(100)       |
+|             | s_book_name      | String(100)       |
+|             | section_id (FK)  | Integer           |
+|             | author           | String(100)       |
+|             | s_author         | String(100)       |
+|             | published_date   | Date              |
+|             | content          | Text              |
+|             | d_link           | String            |
+|             | issue_date       | String            |
+|             | return_date      | String            |
+|             | status           | String            |
+|             | user_id (FK)     | Integer           |
+|             | user (FK)        | Relationship      |
+|             | reviews (FK)     | Relationship      |
++-------------+------------------+-------------------+
+
+Review
++-------------+------------------+-------------------+
+| Primary Key | Field            | Data Type         |
++-------------+------------------+-------------------+
+| id          | book_id (FK)     | Integer           |
+|             | user_id (FK)     | Integer           |
+|             | rating           | Integer           |
++-------------+------------------+-------------------+
+
+Role
++-------------+------------------+-------------------+
+| Primary Key | Field            | Data Type         |
++-------------+------------------+-------------------+
+| id          | name (FK)        | Integer           |
+|             | description (FK) | String            |
+|             | rating           | String            |
++-------------+------------------+-------------------+
+
+UserRoles
++-------------+------------------+-------------------+
+| Primary Key | Field            | Data Type         |
++-------------+------------------+-------------------+
+| id          | user_id (FK)     | Integer           |
+|             | role_id (FK)     | Integer           |
++-------------+------------------+-------------------+
