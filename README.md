@@ -73,6 +73,7 @@ LMS-V2-MAD2/
 ├── tasks.py                      # Celery background tasks
 ├── views.py                      # Flask route definitions
 └── worker.py                     # Celery worker launcher
+```
 
 ---
 
@@ -91,6 +92,7 @@ This project uses **[MailHog](https://github.com/mailhog/MailHog)** for local em
 
 ```bash
 mailhog
+```
 
 3. **Access MailHog interface** at:  
    `http://localhost:8025`
@@ -116,6 +118,7 @@ mailhog
 ```bash
 git clone https://github.com/adityambati/LMS-v2-MAD2.git
 cd LMS-v2-MAD2
+```
 
 2. Create virtual environment and install dependencies
 
@@ -123,6 +126,7 @@ cd LMS-v2-MAD2
 python -m venv venv
 source .venv/local/bin/activate
 pip install -r req.txt
+```
 
 3. Run **Redis server** (required for Celery tasks)
 
@@ -130,21 +134,25 @@ pip install -r req.txt
 
 ```bash
 ~/go/bin/MailHog
+```
 
 5. Start the **Flask app** in new terminal
 
 ```bash
 python app.py
+```
 
 6. Start **Celery worker** in a separate terminal
 
 ```bash
 celery -A app:celery_app worker -l INFO
+```
 
 7. Start **Celery Beat** in an another seperate terminal
 
 ```bash
 celery -A app:celery_app beat -l INFO
+```
 
 ---
 
