@@ -27,6 +27,10 @@ A modern and efficient Library Management System built using JavaScript. Version
 
 ## 📸 Screenshots
 
+| Admin HomePage | Admin Book Management | Monthly report in Mail |
+|----------|------------|-----------|
+| ![HomePage](./screenshots/AdminHomePage.png) | ![BookManage](./screenshots/AdminBookManagement.png) | ![MailHogMonthly](./screenshots/MailHogMonthlyReport.png) |
+
 | Dashboard | Issue Book | Book List |
 |----------|------------|-----------|
 | ![Dashboard](./screenshots/dashboard.png) | ![Issue Book](./screenshots/issue-book.png) | ![Book List](./screenshots/book-list.png) |
