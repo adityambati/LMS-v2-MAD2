@@ -158,7 +158,6 @@ celery -A app:celery_app beat -l INFO
 
 ## 📌 Future Improvements
 
-- 🔐 Role-based login system (student vs librarian)
 - 🧾 Real payment gateway integration (Razorpay/Stripe)
 - 📱 Make UI fully responsive for mobile/tablet users
 - 📤 Deployment-ready Docker setup
