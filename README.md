@@ -167,7 +167,7 @@ celery -A app:celery_app beat -l INFO
 ## 🙋‍♂️ Author
 
 **Aditya Ambati**  
-🎓 B.Sc Data Science @ IIT Madras  
+🎓 B.S in Data Science @ IIT Madras  
 🔗 [GitHub Profile](https://github.com/adityambati)
 
 ---
