@@ -159,7 +159,7 @@ celery -A app:celery_app beat -l INFO
 ## 📌 Future Improvements
 
 - 🧾 Real payment gateway integration (Razorpay/Stripe)
-- 📱 Make UI fully responsive for mobile/tablet users
+- 📱 Make UI better looking and fully responsive for mobile/tablet users
 - 📤 Deployment-ready Docker setup
 
 ---
